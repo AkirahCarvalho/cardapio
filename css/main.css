@@ -232,6 +232,11 @@ a.navbar-brand{
     height: 360px;
 }
 
+.card-item .img-produto img{
+  width: 100%;
+  border-radius: 11px;
+}
+
 .card-item .title-produto{
      color: var(--color-black);
      overflow: hidden;
@@ -273,3 +278,4 @@ a.navbar-brand{
     font-size: 14px;
     cursor: pointer;
 }
+
