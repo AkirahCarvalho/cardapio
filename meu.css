@@ -13,7 +13,7 @@
     --color-text: #4f4f4f;
     --color-text-out: #90908e;
     --color-primary: #ffbf00;
-    --color-secondary: #fff2cc;
+    -color-secondary: #fff2cc;
     --color-white: #ffffff;
     --color-red: #e74c3c;
     --color-green: #2ecc71;
@@ -331,142 +331,29 @@ a.navbar-brand{
     margin-left: 15px;
 }
 
-.depoimentos {
-    padding-top: 100px;
-    padding-bottom: 150px;
+.diego img{
+    border-radius:50%;
+    width: 50px;
+    height: 50px;
+    background-size: cover;
 }
 
-.card-depoimentos {
-   height: 390px;
-    width: 390px;
-    border-radius: 120px;
-    background-color: var(--color-secondary);
-    position: absolute;
-    left: 0;
-   
+.escrita{
+    margin-top: 20px;
+    
 }
 
-.background-depoimentos {
+.card-pizza{
+    height: 450px;
+    width: 450px;
+    border-radius:130px;
+    background-color:#bff5a7;
     position: absolute;
-    left: 0;
-    right: 0;
+    top: -80px;
+}
+
+ .depoimentos .background-depoimentos{
+    position: absolute;
     height: 500px;
     background-image: url(../img/bg-icons-1.png);
-}
-
-.container-dados-depoimento {
-    display: flex;
-}
-
-.depoimento {
-    margin-top: 70px;
-}
-
-.imagem-depoimento {
-    width: 65px;
-    height: 65px;
-    background-color: var(--color-white);
-    border-radius: 50px;
-    background-repeat: no-repeat;
-    background-position: center;
-    margin-right: 15px;
-}
-
-#depoimento-1 .imagem-depoimento {
-    background-image: url(../img/diego.jpg);
-    background-size: cover;
-}
-
-#depoimento-2 .imagem-depoimento {
-    background-image: url(../img/ana.jpg);
-    background-size: cover;
-}
-
-#depoimento-3 .imagem-depoimento {
-    background-image: url(../img/joao.jpg);
-    background-size: cover;
-}
-
-.nome-depoimento {
-    color: var(--color-black);
-    font-size: 22px;
-    margin-bottom: 5px;
-}
-
-.nota-depoimento {
-    color: var(--color-primary);
-}
-
-.nota-depoimento span {
-    color: var(--color-black);
-}
-
-.texto-depoimento {
-    display: flex;
-    font-size: 16px;
-    color: var(--color-black);
-}
-
-.texto-depoimento i {
-    font-size: 35px;
-    color: var(--color-primary);
-}
-
-.texto-depoimento i:first-child {
-    padding-left: 10px;
-    padding-right: 35px;
-}
-
-.texto-depoimento i:last-child {
-    padding-left: 45px;
-    display: flex;
-    justify-content: center;
-    align-items: end;
-}
-
-.hidden{
-    display: none;
-}
-
-.reservas{
-    padding-top: 100px;
-    padding-bottom: 150px;
-}
-
-
-
-.card-reservas{
-    height: 550px;
-    width: 1150px;
-    border-radius:130px;
-    background-color:var(--color-secondary);
-    position: absolute;
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-top: 5px;
-}
- 
-.ti-reserva{
-   margin-top: 150px;
-  position: absolute;
-  margin-right: 60px;
-  margin-left: 60px;
-}
-
-.card-reservas-branco{
-    height: 310px;
-    width: 350px;
-    border-radius: 120px;
-    position: absolute;
-   background-color: var(--color-background);
-   margin-left: 750px;
-   margin-top: 130px;
-}
-
-.reserva-img img{
-    
-    width: 100%;
-    position: absolute;
-    margin-left: 550px;
-    margin-top: 100px;
 }
