@@ -20,6 +20,8 @@ cardapio.eventos = {
     init: () => {
         // console.log('iniciou')
         cardapio.metodos.obterItensCardapio();
+        cardapio.metodos.carregarBotaoReserva();
+        carregar.metodos.carregarBotaoLigar();
     }
 }
 
@@ -258,6 +260,29 @@ cardapio.metodos = {
         cardapio.metodos.carregarValores();
     },
 
+    carregarBotaoReserva:()=>{
+        var texto='Olá! gostaria de fazer uma *reserva*';
+        let encode=encodeURI(texto);
+        let URL='https://wa.me/${CELULAR_EMPRESA}?text=${encode}';
+        $("#btnReserva").attr('href', URL);
+    },
+
+    carregarBotaoLigar:()=>{
+        $('#btnLigar').attr('href','tel:${CELULAR_EMPRESA}');
+    },
+
+    abrirDepoimento:(depoimento)=>{
+        $("#depoimento-1").addClass('hidden');
+        $("#depoimento-2").addClass('hidden');
+        $("#depoimento-3").addClass('hidden');
+
+        $("#btnDepoimento-1").removeClass('active');
+        $("#btnDepoimento-2").removeClass('active');
+        $("#btnDepoimento-3").removeClass('active');
+
+        $("#depoimento-" + depoimento).removeClass('hidden');
+        $("#btnDepoimento-" + depoimento).addClass('active');
+    },
    
     mensagem: (texto, cor ='red', tempo = 3500) =>{
 
@@ -538,7 +563,7 @@ cardapio.metodos = {
 
 cardapio.templates = {
     item: `
-    <div class="col-3 mb-5" >
+    <div class="col-3 mb-5 animated fadeInUp" >
         <div class="card card-item" id="\${id}">
         <div class="img-produto">
             <img src="\${img}" />
